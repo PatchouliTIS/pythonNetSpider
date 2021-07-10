@@ -9,5 +9,59 @@
         "./modules",
     ],
     "python.analysis.useImportHeuristic":true,
-    
+
+    "topper.customTemplateParameters": [
+        {
+            "personalProfile": {
+                "author": "Patchouli Tisa",
+                "website": "https://github.com/PatchouliTIS?tab=repositories",
+                "copyright": "None \n None",
+                "license": "None",
+                "email": "pyramkar@gmail.com",
+                "description": "RLTW",
+            }
+        },
+        {
+            "officeProfile": {
+                "author": "UNKNOW",
+                "department": "7th LEGION RECON PLATTOON",
+                "email": "UNCERTIFICATED"
+            }
+        }
+    ],
+    "topper.headerTemplates": [
+        {
+            "defaultCStyled": {
+                "headerBegin": "/**",
+                "headerPrefix": "*",
+                "headerEnd": "*/",
+                "template": [
+                    "${headerBegin}",
+                    "${headerPrefix} ${fileName}",
+                    "${headerPrefix} @author ${author}",
+                    "${headerPrefix} @description ${description}",
+                    "${headerPrefix} @created ${createdDate}",
+                    "${headerPrefix} @copyright ${copyright}",
+                    "${headerPrefix} @last-modified ${lastModifiedDate}",
+                    "${headerEnd}"
+                ]
+            }
+        },
+        {
+            "python": {
+                "headerBegin": "# -*- coding: utf-8 -*-",
+                "headerPrefix": "#",
+                "headerEnd": "#",
+                "template": [
+                    "${headerBegin}",
+                    "${headerPrefix} ${fileName}",
+                    "${headerPrefix} @author ${author}",
+                    "${headerPrefix} @description ${description}",
+                    "${headerPrefix} @created ${createdDate}",
+                    "${headerPrefix} @last-modified ${lastModifiedDate}",
+                    "${headerEnd}"
+                ]
+            }
+        }
+    ],
 }

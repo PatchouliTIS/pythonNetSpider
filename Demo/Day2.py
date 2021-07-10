@@ -46,7 +46,7 @@ print(str * 3)      # 多次打印
 
 print(r"hello\nchengdu")    # r开头表示无视反斜杠\ 直接全部输出
 
-
+print("%d * %d = %d"%(i, j, i*j))
 # 常用的字符串API
 # byte.decode(encoding="utf-8", errors="strict")    解码方式utf-8
 # encode(encoding="utf-8", errors="strict")     编码方式
