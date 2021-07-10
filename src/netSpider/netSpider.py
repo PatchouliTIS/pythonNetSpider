@@ -110,7 +110,7 @@ def saveData2xsl(datalist, savepath):
     sheet = book.add_sheet('TOP250films', cell_overwrite_ok=True)
     col = ('电影链接', '图片链接', '影片中文名', '影片外文名', '评分', '评价人数', '概况', '相关信息')
     for i in range(0, 8):
-        sheet.write(0, i, col[i])  # 表头
+        sheet.write(0, i, col[i])  # (x坐标，y坐标，内容)表头
     for i in range(0, 250):
         data = datalist[i]
 
