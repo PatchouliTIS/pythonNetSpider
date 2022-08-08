@@ -3,7 +3,7 @@
 # @author Patchouli Tisa
 # @description RLTW
 # @created 2021-07-10T16:40:15.820Z+08:00
-# @last-modified 2021-07-10T17:56:22.183Z+08:00
+# @last-modified 2021-09-14T11:38:53.378Z+08:00
 #
 
 import re
@@ -16,6 +16,7 @@ findIMG_L = re.compile(r'src="(.*?)"', re.S)
 findTitle = re.compile(r'<span class="title">(.*?)</span>')
 
 datalist = []
+
 
 def getHTML(baseurl):
     html = ""
